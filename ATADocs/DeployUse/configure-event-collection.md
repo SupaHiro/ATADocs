@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Configure Event Collection | Microsoft Docs
+title: Configure event collection in Advanced Threat Analytics | Microsoft Docs
 description: Describes your options for configuring event collection with ATA
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/08/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: advanced-threat-analytics
@@ -196,6 +196,8 @@ In this scenario we are assuming that the ATA Gateway is a member of the domain.
 1.	Open Active Directory Users and Computers, navigate to the **BuiltIn** folder and double click **Event Log Readers**. 
 2.	Select **Members**.
 4.	If **Network Service** is not listed, click **Add**, type **Network Service** in the **Enter the object names to select** field. Then click **Check Names** and click **OK** twice. 
+
+Note that after adding the **Network Service** to the **Event Log Readers** group you need to reboot the domain controllers for the change to take effect.
 
 **Step 2: Create a policy on the domain controllers to set the Configure target Subscription Manager setting.** 
 > [!Note] 

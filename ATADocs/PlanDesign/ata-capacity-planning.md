@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Planning your ATA Deployment | Microsoft Docs
+title: Planning your Advanced Threat Analytics deployment | Microsoft Docs
 description: Helps you plan your deployment and decide how many ATA servers will be needed to support your network
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod:
@@ -60,13 +60,13 @@ The ATA Center requires a recommended minimum of 30 days of data for user behavi
 |10,000|4|48|3|90|200 (300)
 |40,000|8|64|12|360|500 (1,000)
 |100,000|12|96|30|900|1,000 (1,500)
-|400,000|40|128|120|1,800|2,000 (2,500)
+|400,000|40|128|120|3,600|4,000 (5,000)
 
 &#42;This includes physical cores, not hyper-threaded cores.
 
 &#42;&#42;Average numbers (Peak numbers)
 > [!NOTE]
-> -   The ATA Center can handle an aggregated maximum of 400,000 frames per second (FPS) from all the monitored domain controllers.
+> -   The ATA Center can handle an aggregated maximum of 400,000 frames per second (FPS) from all the monitored domain controllers. In some environments, the same ATA Center can handle overall traffic that is higher than 400,000. Please contact askcesec@microsoft.com for assistance with such environments.
 > -   The amounts of storage dictated here are net values, you should always account for future growth and to make sure that the disk the database resides on has at least 20% of free space.
 > -   If your free space reaches a minimum of either 20% or 100 GB, the oldest collection of data will be deleted. This will continue to occur until 5% or 50 GB of free space remains at which point data collection will stop working.
 > -   The storage latency for read and write activities should be below 10 ms.
